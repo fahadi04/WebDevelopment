@@ -1,17 +1,22 @@
-const max = prompt("Enter the max num");
-const random = Math.floor(Math.random() * max) + 1;
-let guess = prompt("Guess the number");
-while (true) {
-    if (guess == "quit") {
-        console.group("Quit the game");
-        break;
-    }
-    if (guess == random) {
-        console.log("You are right! Congrats!! Random number", random);
-        break;
-    } else if (guess < random) {
-        guess = prompt("hint:Your guess was too small.Please try again");
-    } else {
-        guess = prompt("hint:Your guess was too large.Please try again");
-    }
+let btn = document.querySelector("button");
+
+btn.addEventListener("click", function () {
+    let h3 = document.querySelector("h3");
+    let randomColor = getRandomColor();
+    h3.innerText = randomColor;
+
+    let div = document.querySelector("div");
+    div.style.backgroundColor = randomColor;
+    console.log("Colors updated");
+
+});
+
+function getRandomColor() {
+    let red = Math.floor(Math.random() * 255);
+    let green = Math.floor(Math.random() * 255);
+    let blue = Math.floor(Math.random() * 255);
+
+    let color = `rgb(${red},${green},${blue})`;
+    return color;
 }
+

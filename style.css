@@ -1,0 +1,24 @@
+body{
+    text-align: center;
+    border: 1px dotted black;
+}
+h3{
+  background-color: aqua;
+  display: inline;
+  font-size: larger;
+ }
+button{
+    background-color: aqua;
+    color: black;
+    font-size: larger;
+    text-transform: capitalize;
+ } 
+div{
+    height: 68vh;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: larger;
+}
