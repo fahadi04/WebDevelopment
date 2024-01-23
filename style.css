@@ -1,24 +1,17 @@
-body{
-    text-align: center;
-    border: 1px dotted black;
+body {
+    background-color: bisque;
+    text-shadow: 0cap;
+    
 }
-h3{
-  background-color: aqua;
-  display: inline;
-  font-size: larger;
- }
-button{
-    background-color: aqua;
-    color: black;
-    font-size: larger;
+
+h1 {
+    color: rgb(223, 41, 141);
+    text-decoration: underline;
+}
+
+button {
+    color: aqua;
+    background-color: black;
+    border-radius: 50%;
     text-transform: capitalize;
- } 
-div{
-    height: 68vh;
-    border: 1px solid black;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-size: larger;
 }
