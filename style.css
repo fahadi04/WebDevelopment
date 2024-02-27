@@ -1,30 +1,428 @@
 * {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+
     text-align: center;
-    background-color: #34ebd5;
+    height: 100%;
+    width: 20%;
+    background-color: #383737;
+    line-height: 51px;
+    position: fixed;
+}
+
+#logo {
+    color: white;
+    background-color: #383737;
+
+}
+
+.homepage {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20%;
+    background-color: black;
+
+}
+
+
+.Home {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    width: 95%;
+}
+
+
+.Home p {
+    width: 90%;
+}
+
+.content {
+    margin-top: 5rem;
+    width: 100%;
+    border-radius: 10px;
+    background-color: black;
+    line-height: 25px;
+    display: flex;
+    /* align-items: baseline; */
+}
+
+.content .myImage {
+    width: 30%;
+    border-radius: 9px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 45%;
+
+}
+
+.aboutme button {
+    margin-top: 5rem;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px;
+    margin-left: 10rem;
+    border-bottom: solid grey;
+    border-right: solid grey;
+    border-radius: 20%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.cv-button button {
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 10rem;
+    border-bottom: solid grey;
+    border-right: solid grey;
+    border-radius: 20%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.myInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
     color: white;
 }
 
-div {
-    width: 25%;
-    display: inline-block;
-    font-size: 1rem;
-    color: rgb(255, 255, 255);
-
-}
-
-input {
-    font-size: 17px;
-    margin: -5px
-}
-
-button {
-    color: rgb(255, 255, 255);
-    font-size: 17px;
-}
-
-h1 {
-    display: inline-block;
-    border: 1px dotted black;
-    background-color: cadetblue;
+.myInfo .main {
     color: white;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 12.3rem;
+    justify-content: center;
+}
+
+.mian h3 {
+    color: white;
+    text-decoration: none;
+}
+
+h1:hover {
+    color: red;
+}
+
+.about {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    line-height: 25px;
+
+
+}
+
+.heading {
+    text-align: start;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px;
+
+}
+
+.para {
+    text-align: justify;
+    margin: 10px;
+    color: white;
+    line-height: 25px;
+
+}
+
+span {
+    color: red;
+}
+
+ul {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.myInfo h3:hover {
+    color: red;
+    text-decoration: underline white;
+    cursor: pointer;
+}
+
+.contact h3:hover {
+    color: red;
+    text-decoration: underline white;
+    cursor: pointer;
+
+}
+
+
+.logo h3 {
+    color: red;
+    text-decoration: none;
+    text-align: center;
+}
+
+.logo h3:hover {
+
+    color: red;
+}
+
+.logo a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.details {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    line-height: 3rem;
+    cursor: pointer;
+}
+
+.mydetails p {
+    text-decoration: underline;
+}
+
+.myinfo p {
+    text-decoration: underline;
+}
+
+.button {
+    width: 92%;
+    display: flex;
+    padding: 15px;
+
+}
+
+.education {
+    width: 55%;
+    background-color: gainsboro;
+    color: black;
+    align-items: center;
+
+}
+
+.edu {
+
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: gainsboro;
+    color: black;
+    line-height: 25px;
+
+}
+
+.edu p {
+    cursor: pointer;
+}
+
+.edu h3 {
+    text-align: center;
+}
+
+.edudetails {
+    display: contents;
+    text-align: justify;
+}
+
+.contact {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+}
+
+.headContact {
+    display: flex;
+    margin-left: 3%;
+    align-items: center;
+    color: white;
+}
+
+.Contactmain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: red;
+    height: 5rem;
+}
+
+.contact .comm {
+    display: flex;
+    justify-content: space-around;
+}
+
+.callus {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 6rem;
+
+}
+
+.callus i {
+    font-size: x-large;
+}
+
+.callus i:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+form-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.form h3 {
+    text-align: center;
+    color: red;
+}
+
+.form-group input {
+    width: 28rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 10px;
+}
+
+.e-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-subject input {
+    width: 95%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form textarea {
+    height: 20rem;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.submitbutton button {
+    height: 31px;
+    font-size: 15px;
+    width: 12%;
+    text-align: center;
+    align-items: center;
+    border-bottom: solid grey;
+    border-right: solid grey;
+    border-radius: 15%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+.sociallink {
+    border: .5px dotted white;
+    padding-top: 5px;
+    flex-direction: column;
+}
+
+.Connect h3 {
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.socialapp {
+    padding: 1.5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sociallink i {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    line-height: 5rem;
+}
+
+.sociallink i:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 5rem;
+    color: aquamarine;
 }
